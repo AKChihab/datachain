@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --color-paper: #fff;
+  --color-ink: #000;
+  --color-mute: rgb(0 0 0 / 0.55);
+  --color-soft: rgb(0 0 0 / 0.72);
+  --color-line: rgb(0 0 0 / 0.12);
+  --color-rule: #000;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark {
+  --color-paper: #000;
+  --color-ink: #fff;
+  --color-mute: rgb(255 255 255 / 0.58);
+  --color-soft: rgb(255 255 255 / 0.78);
+  --color-line: rgb(255 255 255 / 0.16);
+  --color-rule: #fff;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  list-style: none;
+}
+
+:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
