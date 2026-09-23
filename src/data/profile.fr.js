@@ -15,10 +15,10 @@ export const profileFr = {
   github: "https://github.com/AKChihab",
   cv: "chihab-akaoui-cv-fr.pdf",
   photo: "",
-  headline: "Je construis une connaissance client qu'une équipe marketing peut utiliser.",
-  lede: "Je travaille la connaissance client pour le marketing et le retail: qui a de la valeur, qui est prêt à acheter, quel média se rembourse, et ce qu'une promotion change vraiment.",
+  headline: "Je construis l'analyse qu'une équipe métier peut utiliser.",
+  lede: "Je travaille avec le métier sur la décision, et je construis la donnée derrière. Le travail actuel porte sur la valeur client et les promotions dans le retail. Avant ça: le risque crédit, le CRM bancaire, et les flottes connectées.",
   about: [
-    "Je suis data scientist et analytics engineer à Lille. Le cœur du travail, c'est la valeur vie client, le score d'appétence, le mix marketing, et l'effet incrémental des promotions.",
+    "Je suis data scientist et analytics engineer à Lille. Je préfère une équipe mixte, proche de la décision, à une équipe plateforme qui ne livre que des pipelines.",
     "Je reste du côté engineering de la même question. SQL et Python pour la poser. dbt, Airflow ou Spark pour que la donnée soit fiable. Un modèle quand il change une décision. Power BI ou Streamlit pour que l'équipe s'en serve.",
     "En ce moment j'utilise aussi les LLM sur des tâches concrètes: assistants, RAG, et lecture de code historique. Le MLOps, c'est la partie que j'étends volontairement.",
   ],
@@ -231,13 +231,13 @@ export const profileFr = {
     {
       period: "2020 - 2023",
       title: "Bot de trading crypto",
-      text: "Un bot Python avec des flux API pour les données de marché en direct et des backtests automatisés.",
+      text: "Un bot Python sur des données de marché crypto en direct, avec des backtests automatisés.",
       links: [],
     },
     {
       period: "2018 - 2021",
       title: "Tableau de bord fiscal crypto",
-      text: "Un tableau de bord pour préparer la déclaration fiscale des cryptomonnaies.",
+      text: "Un tableau de bord qui transforme l'activité crypto en déclaration fiscale.",
       links: [],
     },
   ],
@@ -340,7 +340,7 @@ export const profileFr = {
     earlier: "Avant",
     how: "Comment je travaille",
     projects: "Projets",
-    projectsLead: "À côté des missions client.",
+    projectsLead: "À côté des missions client, y compris les marchés et la crypto.",
     background: "Parcours",
     education: "Formation",
     languages: "Langues",
@@ -362,6 +362,6 @@ export const profileFr = {
     themeDark: "Passer en noir",
     pageTitle: "Chihab Akaoui, data scientist senior",
     pageDescription:
-      "Chihab Akaoui est data scientist senior et analytics engineer à Lille. Valeur client, mix marketing, impact causal des promotions, et les pipelines derrière.",
+      "Chihab Akaoui est data scientist senior et analytics engineer à Lille. Il travaille avec le métier sur la décision, du retail au risque crédit et aux flottes connectées.",
   },
 };

@@ -16,10 +16,10 @@ export const profile = {
   github: "https://github.com/AKChihab",
   cv: "chihab-akaoui-cv.pdf",
   photo: "",
-  headline: "I build customer knowledge a marketing team can use.",
-  lede: "I work on customer knowledge for marketing and retail: who is valuable, who is ready to buy, which media pays back, and what a promotion actually changes.",
+  headline: "I build the analysis a business team can use.",
+  lede: "I sit with the business on the decision, and I build the data behind it. The current work is customer value and promotions in retail. Before that: credit risk, bank CRM, and connected fleets.",
   about: [
-    "I am a data scientist and analytics engineer in Lille. The core of the work is lifetime value, appetite scoring, marketing mix, and the incremental effect of promotions.",
+    "I am a data scientist and analytics engineer in Lille. I prefer a mixed team, close to the decision, over a platform team that only ships pipelines.",
     "I stay on the engineering side of the same question. SQL and Python to frame it. dbt, Airflow or Spark so the data can be trusted. A model when it changes a decision. Power BI or Streamlit so the team can use the result.",
     "Lately I also use LLMs on concrete tasks: assistants, RAG, and reading legacy code. MLOps is the part I am extending on purpose.",
   ],
@@ -234,13 +234,13 @@ export const profile = {
     {
       period: "2020 - 2023",
       title: "Crypto trading bot",
-      text: "A Python bot with API feeds for live market data and automated backtests.",
+      text: "A Python bot on live crypto market data, with automated backtests.",
       links: [],
     },
     {
       period: "2018 - 2021",
       title: "Crypto tax dashboard",
-      text: "A dashboard to prepare cryptocurrency tax reporting.",
+      text: "A dashboard that turns crypto activity into a tax report.",
       links: [],
     },
   ],
@@ -343,7 +343,7 @@ export const profile = {
     earlier: "Earlier",
     how: "How I work",
     projects: "Projects",
-    projectsLead: "Side work, separate from client delivery.",
+    projectsLead: "Side work, including markets and crypto.",
     background: "Background",
     education: "Education",
     languages: "Languages",
@@ -365,6 +365,6 @@ export const profile = {
     themeDark: "Switch to black",
     pageTitle: "Chihab Akaoui, Senior Data Scientist",
     pageDescription:
-      "Chihab Akaoui is a senior data scientist and analytics engineer in Lille. Customer value, marketing mix, causal promotion impact, and the pipelines behind them.",
+      "Chihab Akaoui is a senior data scientist and analytics engineer in Lille. He works with business teams on the decision, across retail, credit risk, and connected fleets.",
   },
 };
