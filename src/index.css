@@ -53,8 +53,44 @@ summary {
   outline-offset: 3px;
 }
 
+.chain-link {
+  position: relative;
+  width: 1.75rem;
+  height: 1px;
+  background: color-mix(in srgb, currentColor 35%, transparent);
+  overflow: hidden;
+}
+
+.chain-link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 999px;
+  background: currentColor;
+  transform: translate(-100%, -50%);
+  animation: chain-flow 2.8s linear infinite;
+}
+
+.chain-link-late::after {
+  animation-delay: 1.4s;
+}
+
+@keyframes chain-flow {
+  to {
+    transform: translate(1.75rem, -50%);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .chain-link::after {
+    animation: none;
+    opacity: 0;
   }
 }

@@ -56,12 +56,19 @@ function GitHubIcon() {
   );
 }
 
-function ChainMark() {
+function DataChain({ raw, insight }) {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.6">
-      <rect x="2.5" y="8" width="11" height="8" rx="4" />
-      <rect x="10.5" y="8" width="11" height="8" rx="4" />
-    </svg>
+    <p className="mt-6 flex items-center justify-center gap-2.5 text-mute">
+      <span className="font-mono text-[10px] tracking-[0.16em] uppercase">{raw}</span>
+      <span className="flex items-center text-ink" aria-hidden="true">
+        <span className="h-2.5 w-2.5 border border-current" />
+        <span className="chain-link" />
+        <span className="h-2.5 w-2.5 border border-current" />
+        <span className="chain-link chain-link-late" />
+        <span className="h-2.5 w-2.5 bg-current" />
+      </span>
+      <span className="font-mono text-[10px] tracking-[0.16em] uppercase text-ink">{insight}</span>
+    </p>
   );
 }
 
@@ -339,12 +346,9 @@ export default function App() {
 
       <header className="fixed inset-x-0 top-0 z-30 border-b border-line bg-paper text-ink">
         <div className="flex flex-col gap-3 px-5 py-4 md:flex-row md:items-center md:justify-between md:px-8">
-          <a href="#top" className="inline-flex items-center gap-2 whitespace-nowrap">
-            <ChainMark />
-            <span className="flex flex-col leading-none">
-              <span className="text-sm tracking-tight">{profile.name}</span>
-              <span className="mt-1 font-mono text-[10px] tracking-[0.16em] uppercase text-mute">{profile.company}</span>
-            </span>
+          <a href="#top" className="inline-flex flex-col leading-none whitespace-nowrap">
+            <span className="text-sm tracking-tight">{profile.name}</span>
+            <span className="mt-1 font-mono text-[10px] tracking-[0.16em] uppercase text-mute">{profile.company}</span>
           </a>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2 md:justify-end">
             <nav aria-label="Sections">
@@ -395,6 +399,7 @@ export default function App() {
 
       <section id="top" className="px-5 pt-32 pb-16 text-center md:px-8 md:pt-40 md:pb-24">
         <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-mute">{profile.role}</p>
+        <DataChain raw={profile.ui.flowRaw} insight={profile.ui.flowInsight} />
         <h1 className="mx-auto mt-5 max-w-3xl text-[clamp(2.4rem,5.4vw,4.6rem)] leading-[1.05] font-medium tracking-tight">
           {profile.headline}
         </h1>
