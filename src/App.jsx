@@ -56,6 +56,15 @@ function GitHubIcon() {
   );
 }
 
+function ChainMark() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.6">
+      <rect x="2.5" y="8" width="11" height="8" rx="4" />
+      <rect x="10.5" y="8" width="11" height="8" rx="4" />
+    </svg>
+  );
+}
+
 function ThemeIcon({ dark }) {
   if (dark) {
     return (
@@ -330,8 +339,12 @@ export default function App() {
 
       <header className="fixed inset-x-0 top-0 z-30 border-b border-line bg-paper text-ink">
         <div className="flex flex-col gap-3 px-5 py-4 md:flex-row md:items-center md:justify-between md:px-8">
-          <a href="#top" className="text-sm tracking-tight whitespace-nowrap">
-            {profile.name}
+          <a href="#top" className="inline-flex items-center gap-2 whitespace-nowrap">
+            <ChainMark />
+            <span className="flex flex-col leading-none">
+              <span className="text-sm tracking-tight">{profile.name}</span>
+              <span className="mt-1 font-mono text-[10px] tracking-[0.16em] uppercase text-mute">{profile.company}</span>
+            </span>
           </a>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2 md:justify-end">
             <nav aria-label="Sections">

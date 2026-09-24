@@ -7,6 +7,7 @@
 
 export const profileFr = {
   name: "Chihab Akaoui",
+  company: "Datachain",
   role: "Data scientist senior et analytics engineer",
   location: "Lille, France",
   email: "akaoui1993@gmail.com",
