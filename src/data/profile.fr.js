@@ -28,7 +28,7 @@ export const profileFr = {
     company: "Leroy Merlin",
     meta: "Lille, depuis mai 2025",
     focus:
-      "Valeur client, comportement d'achat, mix marketing et impact des promotions, avec la data science ADEO.",
+      "Valeur client, comportement d'achat, marketing mix et impact des promotions, avec la data science ADEO.",
   },
   facts: [
     {
@@ -51,7 +51,7 @@ export const profileFr = {
     },
     {
       title: "Data science marketing",
-      text: "Valeur vie client, impact des promotions, mix marketing, revenu incrémental, performance des campagnes et contribution des médias.",
+      text: "LTV, impact des promotions, marketing mix, revenu incrémental, performance des campagnes et contribution des médias.",
     },
     {
       title: "Data engineering",
@@ -102,7 +102,7 @@ export const profileFr = {
         "Connaissance client et marketing: valeur, comportement d'achat, performance média et impact des promotions, en lien avec la data science ADEO.",
       highlights: [
         "Interlocuteur data dans l'équipe marketing, entre le métier, la data et les partenaires externes.",
-        "Scores de valeur vie, d'appétence, de segmentation, d'uplift et de réponse aux campagnes.",
+        "Scores de LTV, d'appétence, de segmentation, d'uplift et de réponse aux campagnes.",
         "Mix marketing pour estimer le revenu incrémental par canal média.",
         "Modélisation causale de l'investissement promotionnel, y compris des approches par graphes.",
         "Modèles de recommandation et détection des parcours d'achat.",
@@ -351,7 +351,7 @@ export const profileFr = {
     contactLead: "Pour un poste, une mission, ou un échange technique.",
     download: "Télécharger le CV",
     downloadName: "Chihab-Akaoui-CV-FR.pdf",
-    flowRaw: "Brut",
+    flowRaw: "Raw",
     flowInsight: "Insight",
     book: "Réserver 15 min",
     bookHint: "Prochains jours ouvrés, 12:00-14:00 ou 17:00-19:00. Je confirme par e-mail.",
