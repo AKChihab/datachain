@@ -352,6 +352,7 @@ export const profileFr = {
     download: "Télécharger le CV",
     downloadName: "Chihab-Akaoui-CV-FR.pdf",
     flowRaw: "Raw",
+    flowModel: "Model",
     flowInsight: "Insight",
     book: "Réserver 15 min",
     bookHint: "Prochains jours ouvrés, 12:00-14:00 ou 17:00-19:00. Je confirme par e-mail.",

@@ -355,6 +355,7 @@ export const profile = {
     download: "Download CV",
     downloadName: "Chihab-Akaoui-CV.pdf",
     flowRaw: "Raw",
+    flowModel: "Model",
     flowInsight: "Insight",
     book: "Book 15 min",
     bookHint: "Next working days, 12:00-14:00 or 17:00-19:00. I confirm by email.",

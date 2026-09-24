@@ -56,18 +56,18 @@ function GitHubIcon() {
   );
 }
 
-function DataChain({ raw, insight }) {
+function DataChain({ raw, model, insight }) {
+  const label = "font-mono text-[10px] tracking-[0.16em] uppercase";
   return (
-    <p className="mt-6 flex items-center justify-center gap-2.5 text-mute">
-      <span className="font-mono text-[10px] tracking-[0.16em] uppercase">{raw}</span>
-      <span className="flex items-center text-ink" aria-hidden="true">
-        <span className="h-2.5 w-2.5 border border-current" />
-        <span className="chain-link" />
-        <span className="h-2.5 w-2.5 border border-current" />
-        <span className="chain-link chain-link-late" />
-        <span className="h-2.5 w-2.5 bg-current" />
-      </span>
-      <span className="font-mono text-[10px] tracking-[0.16em] uppercase text-ink">{insight}</span>
+    <p className="mt-6 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-ink">
+      <span className={label}>{raw}</span>
+      <span className="h-2.5 w-2.5 border border-current" aria-hidden="true" />
+      <span className="chain-link" aria-hidden="true" />
+      <span className={label}>{model}</span>
+      <span className="h-2.5 w-2.5 border border-current" aria-hidden="true" />
+      <span className="chain-link chain-link-late" aria-hidden="true" />
+      <span className="h-2.5 w-2.5 bg-current" aria-hidden="true" />
+      <span className={label}>{insight}</span>
     </p>
   );
 }
@@ -399,7 +399,7 @@ export default function App() {
 
       <section id="top" className="px-5 pt-32 pb-16 text-center md:px-8 md:pt-40 md:pb-24">
         <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-mute">{profile.role}</p>
-        <DataChain raw={profile.ui.flowRaw} insight={profile.ui.flowInsight} />
+        <DataChain raw={profile.ui.flowRaw} model={profile.ui.flowModel} insight={profile.ui.flowInsight} />
         <h1 className="mx-auto mt-5 max-w-3xl text-[clamp(2.4rem,5.4vw,4.6rem)] leading-[1.05] font-medium tracking-tight">
           {profile.headline}
         </h1>
