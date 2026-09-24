@@ -444,7 +444,7 @@ export default function App() {
           <dl className="grid gap-8 md:grid-cols-3">
             {profile.facts.map((fact) => (
               <div key={fact.label} className="border-t border-rule pt-4">
-                <dt className="text-lg tracking-tight">{fact.label}</dt>
+                <dt className="text-base tracking-tight">{fact.label}</dt>
                 <dd className="mt-2 text-sm leading-relaxed text-mute">{fact.text}</dd>
               </div>
             ))}
@@ -470,7 +470,7 @@ export default function App() {
                 <p key={job.company} className="grid gap-1 py-4 md:grid-cols-[9.5rem_1fr]">
                   <span className="font-mono text-[11px] text-mute">{job.when}</span>
                   <span>
-                    <span className="block">
+                    <span className="block text-sm">
                       {job.title}, {job.company}
                     </span>
                     <span className="mt-1 block text-sm text-mute">
@@ -488,7 +488,7 @@ export default function App() {
           <div className="grid gap-x-12 gap-y-8 md:grid-cols-2">
             {profile.expertise.map((item) => (
               <article key={item.title}>
-                <h3 className="text-lg tracking-tight">{item.title}</h3>
+                <h3 className="text-base tracking-tight">{item.title}</h3>
                 <p className="mt-2 max-w-xl text-sm leading-relaxed text-soft">{item.text}</p>
               </article>
             ))}
@@ -524,7 +524,7 @@ export default function App() {
               <article key={project.title} className="grid gap-3 border-b border-line py-6 md:grid-cols-[9.5rem_1fr]">
                 <p className="font-mono text-[11px] text-mute">{project.period}</p>
                 <div>
-                  <h3 className="text-2xl tracking-tight">{project.title}</h3>
+                  <h3 className="text-sm tracking-tight">{project.title}</h3>
                   <p className="mt-2 max-w-xl text-sm leading-relaxed text-soft">{project.text}</p>
                   {project.links.length > 0 ? (
                     <p className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm underline underline-offset-4">
@@ -552,7 +552,7 @@ export default function App() {
                   <li key={item.title} className="grid gap-1 border-b border-line py-4 md:grid-cols-[8rem_1fr]">
                     <span className="font-mono text-[11px] text-mute">{item.years}</span>
                     <span>
-                      <span className="block">{item.title}</span>
+                      <span className="block text-sm">{item.title}</span>
                       <span className="mt-1 block text-sm text-mute">{item.school}</span>
                     </span>
                   </li>
@@ -653,9 +653,9 @@ function Role({ job }) {
                 <span className="sr-only">{job.company}</span>
               </>
             ) : (
-              <span className="block text-2xl tracking-tight md:text-3xl">{job.company}</span>
+              <span className="block text-base tracking-tight">{job.company}</span>
             )}
-            <span className="mt-2 block text-sm text-soft">{job.title}</span>
+            <span className="mt-2 block text-base tracking-tight">{job.title}</span>
           </span>
           <span className="hidden text-sm text-mute md:block">{job.where}</span>
         </span>
@@ -664,7 +664,7 @@ function Role({ job }) {
       <div className="grid gap-6 pb-8 md:grid-cols-[9.5rem_minmax(0,42rem)]">
         <p className="font-mono text-[11px] text-mute md:hidden">{job.where}</p>
         <div className="md:col-start-2">
-          <p className="max-w-2xl leading-relaxed">{job.summary}</p>
+          <p className="max-w-2xl text-sm leading-relaxed text-soft">{job.summary}</p>
           <ul className="mt-5 space-y-2">
             {job.highlights.map((item) => (
               <li key={item} className="flex gap-3 text-sm leading-relaxed text-soft">
